@@ -231,7 +231,7 @@
     .title p {
         display: inline;
         margin-left: 10px;
-        color: antiquewhite;
+        color: pink;
         font-size: 2.5rem;
     }
     
@@ -282,13 +282,14 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding-left: 100px;
+        padding-left: 80px;
     }
     
     .collect-content .fill-collect p {
         width: 300px;
         margin-right: 20px;
         text-align: left;
+        margin-left: 20px;
     }
     
     .collect-content .fill-collect img {
@@ -301,6 +302,97 @@
     .collect-content .fill-collect h1 {
         margin-left: 20px;
         color: pink;
+    }
+    
+    #contact {
+        padding-top: 100px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+    }
+    
+    .fill-contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .content {
+        display: flex;
+        align-items: center;
+        max-width: 1000px;
+        width: 100%;
+        gap: 50px;
+        padding: 20px;
+    }
+    
+    .text-content {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .text-content h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    
+    .text-content p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        color: #333;
+    }
+    
+    .form-content {
+        display: inline;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    label {
+        margin-bottom: 10px;
+        display: block;
+        width: 100%;
+    }
+    
+    input[type="text"] {
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        width: 250px;
+        box-sizing: border-box;
+        font-size: 1rem;
+    }
+    
+    button {
+        padding: 12px 20px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 10px;
+        /* To align Send button beside the email input */
+    }
+    
+    button:hover {
+        background-color: pink;
+    }
+    
+    .form-content {
+        display: flex;
+        align-items: flex-start;
+    }
+    
+    .form-content label {
+        flex: 1;
+    }
+    
+    button {
+        flex-shrink: 0;
     }
     
     @media (max-width:991px) {
