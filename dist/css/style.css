@@ -402,6 +402,53 @@
                                     color: pink;
                                 }
                                 
+                                #footer {
+                                    background-color: #333;
+                                    color: white;
+                                    padding: 20px 0;
+                                }
+                                
+                                .footer {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    padding: 0 10%;
+                                }
+                                
+                                .social-media a {
+                                    color: white;
+                                    text-decoration: none;
+                                    margin: 0 10px;
+                                    font-size: 24px;
+                                }
+                                
+                                .social-media a:hover {
+                                    color: #FFD700;
+                                    /* Warna ketika ikon di-hover */
+                                }
+                                
+                                .copy {
+                                    font-size: 14px;
+                                }
+                                
+                                .links p {
+                                    margin: 5px 0;
+                                }
+                                
+                                .links a {
+                                    color: white;
+                                    text-decoration: none;
+                                }
+                                
+                                .links a:hover {
+                                    color: #FFD700;
+                                    /* Warna ketika link di-hover */
+                                }
+                                
+                                .material-icons {
+                                    font-size: 30px;
+                                }
+                                
                                 @media (max-width:991px) {
                                     html {
                                         font-size: 55%;
@@ -488,6 +535,48 @@
                                     }
                                     .collect-content .fill-collect p {
                                         width: 600px;
+                                    }
+                                    .social-media a {
+                                        color: white;
+                                        text-decoration: none;
+                                        margin: 0 10px;
+                                        font-size: 20px;
+                                    }
+                                    .copy {
+                                        font-size: 8px;
+                                    }
+                                    .content {
+                                        flex-direction: column;
+                                        /* Stack the columns vertically */
+                                        align-items: center;
+                                        gap: 30px;
+                                    }
+                                    .text-content {
+                                        margin-right: 0;
+                                        text-align: center;
+                                    }
+                                    .text-content h1 {
+                                        font-size: 2rem;
+                                        /* Smaller font size for smaller screens */
+                                    }
+                                    .text-content p {
+                                        font-size: 1rem;
+                                        /* Adjust paragraph font size */
+                                    }
+                                    .form-content {
+                                        width: 100%;
+                                        align-items: center;
+                                    }
+                                    input[type="text"] {
+                                        width: 100%;
+                                        /* Full width input on smaller screens */
+                                    }
+                                    button {
+                                        margin-left: 0;
+                                        /* Remove left margin on button */
+                                        margin-top: 10px;
+                                        /* Add margin on top to separate from input */
+                                        width: 100%;
                                     }
                                 }
                                 
