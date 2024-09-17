@@ -281,28 +281,105 @@
                                 }
                                 
                                 #collect {
-                                    height: 100vh;
-                                }
-                                
-                                .collect-content .fill-collect {
+                                    padding: 50px 0;
+                                    background-color: #f9f9f9;
                                     display: flex;
-                                    flex-direction: row;
+                                    justify-content: center;
                                     align-items: center;
-                                    padding-left: 80px;
+                                    flex-direction: column;
                                 }
                                 
-                                .collect-content .fill-collect p {
-                                    width: 300px;
-                                    margin-right: 20px;
+                                .collect-content {
+                                    max-width: 1200px;
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    padding: 20px;
+                                }
+                                
+                                .fill-collect {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    text-align: center;
+                                }
+                                
+                                .fill-collect h2 {
+                                    font-size: 2.5rem;
+                                    margin-bottom: 15px;
+                                    color: #333;
+                                }
+                                
+                                .fill-collect img {
+                                    width: 200px;
+                                    height: auto;
+                                    margin-bottom: 20px;
+                                }
+                                
+                                .fill-collect h3 {
+                                    font-size: 2rem;
+                                    margin-bottom: 10px;
+                                    color: #555;
+                                }
+                                
+                                .fill-collect h4 {
+                                    font-size: 1.8rem;
+                                    margin-bottom: 10px;
+                                    color: #777;
+                                }
+                                
+                                .fill-collect p {
+                                    font-size: 1.2rem;
+                                    line-height: 1.5;
+                                    margin-bottom: 20px;
+                                    color: #555;
+                                    max-width: 800px;
+                                }
+                                
+                                .promo-aside {
+                                    background-color: #fff;
+                                    padding: 20px;
+                                    margin-top: 30px;
+                                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                                    border-radius: 10px;
                                     text-align: left;
-                                    margin-left: 20px;
+                                    max-width: 300px;
+                                    width: 100%;
                                 }
                                 
-                                .collect-content .fill-collect img {
-                                    max-width: 100%;
-                                    padding-left: 90px;
-                                    height: 280px;
-                                    width: 500px;
+                                .promo-aside h2 {
+                                    font-size: 2rem;
+                                    margin-bottom: 15px;
+                                    color: #333;
+                                }
+                                
+                                .promo-aside ul {
+                                    list-style-type: none;
+                                    padding: 0;
+                                }
+                                
+                                .promo-aside ul li {
+                                    font-size: 1.2rem;
+                                    color: #555;
+                                    margin-bottom: 10px;
+                                    position: relative;
+                                }
+                                
+                                .promo-aside ul li::before {
+                                    content: "✔";
+                                    color: #3cb371;
+                                    font-size: 1.2rem;
+                                    position: absolute;
+                                    left: -25px;
+                                    top: 0;
+                                }
+                                
+                                .promo-aside img {
+                                    width: 100%;
+                                    height: auto;
+                                    margin-bottom: 15px;
+                                    border-radius: 8px;
                                 }
                                 
                                 #contact {
@@ -540,16 +617,15 @@
                                         color: white;
                                         text-decoration: none;
                                         margin: 0 10px;
-                                        font-size: 20px;
+                                        font-size: 12px;
                                     }
                                     .copy {
                                         font-size: 8px;
                                     }
                                     .content {
                                         flex-direction: column;
-                                        /* Stack the columns vertically */
                                         align-items: center;
-                                        gap: 30px;
+                                        gap: 0px;
                                     }
                                     .text-content {
                                         margin-right: 0;
@@ -557,11 +633,9 @@
                                     }
                                     .text-content h1 {
                                         font-size: 2rem;
-                                        /* Smaller font size for smaller screens */
                                     }
                                     .text-content p {
                                         font-size: 1rem;
-                                        /* Adjust paragraph font size */
                                     }
                                     .form-content {
                                         width: 100%;
@@ -569,14 +643,48 @@
                                     }
                                     input[type="text"] {
                                         width: 100%;
-                                        /* Full width input on smaller screens */
+                                    }
+                                    .collect-content {
+                                        flex-direction: column;
+                                        text-align: center;
+                                    }
+                                    .title h1 {
+                                        font-size: 2.5rem;
+                                    }
+                                    .title p {
+                                        font-size: 1.2rem;
+                                    }
+                                    .fill-collect h2 {
+                                        font-size: 2rem;
+                                    }
+                                    .fill-collect h3 {
+                                        font-size: 1.8rem;
+                                    }
+                                    .fill-collect h4 {
+                                        font-size: 1.5rem;
+                                    }
+                                    .fill-collect p {
+                                        font-size: 1rem;
                                     }
                                     button {
-                                        margin-left: 0;
-                                        /* Remove left margin on button */
-                                        margin-top: 10px;
-                                        /* Add margin on top to separate from input */
-                                        width: 100%;
+                                        width: 80%;
+                                        margin-top: 15px;
+                                    }
+                                    .promo-aside {
+                                        max-width: 100%;
+                                        margin-top: 20px;
+                                        padding: 15px;
+                                        text-align: center;
+                                    }
+                                    .promo-aside h2 {
+                                        font-size: 1.8rem;
+                                    }
+                                    .promo-aside ul li {
+                                        font-size: 1rem;
+                                    }
+                                    .promo-aside img {
+                                        width: 80%;
+                                        margin-bottom: 10px;
                                     }
                                 }
                                 
