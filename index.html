@@ -14,17 +14,18 @@
 
 <body>
     <header>
-        <input type="checkbox" name="" id="toggler">
+        <input type="checkbox" id="toggler">
         <label for="toggler" class="fas fa-bars"></label>
 
-        <a href="
-        #" class="logo">E<span>.</span>L<span>.</span>F<span>.</span></a>
+        <a href="#" class="logo">E<span>.</span>L<span>.</span>F<span>.</span></a>
         <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#jenis">Jenis</a>
-            <a href="#isi">products</a>
-            <a href="#collect">Collection</a>
-            <a href="#contact">contact</a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#jenis">Jenis</a></li>
+                <li><a href="#isi">Products</a></li>
+                <li><a href="#collect">Collection</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
 
         <div class="icons">
@@ -33,143 +34,88 @@
             <a href="#" class="fas fa-user"></a>
         </div>
     </header>
+
     <main>
-        <section id="beranda">
+        <section id="beranda" aria-label="Shop Section">
             <div class="content-description">
-                <h3 class="title-content">Shop</h3>
-                <div class="vertical-line"></div>
+                <h1 class="title-content">Shop</h1>
+                <hr class="vertical-line">
                 <div class="type">
-                    <p><a href="">Primers</a></p>
-                    <p><a href="">Night Creams</a></p>
-                    <p><a href="">Moisturrisers</a></p>
-                    <p><a href="">Day Cream</a></p>
+                    <p>Primers</p>
+                    <p>Night Creams</p>
+                    <p>Moisturrisers</p>
+                    <p>Day Cream</p>
                 </div>
             </div>
             <div class="content">
-                <div class="content-image">
-                    <img src="dist/img/elf" alt="">
-                </div>
+                <figure class="content-image">
+                    <img src="dist/img/elf" alt="Product Image">
+                </figure>
             </div>
             <div class="content-description">
-                <p class="keterangan">limited edition</p>
-                <h3 class="judul">iluminating <br> face primmer</h3>
+                <p class="keterangan">Limited Edition</p>
+                <h2 class="judul">Illuminating Face Primer</h2>
+            </div>
+        </section>
+
+        <section id="jenis" aria-label="Product Types">
+            <div class="content-type">
+                <article class="left-content">
+                    <h2>Indoors</h2>
+                    <figure>
+                        <img src="dist/img/indoorr" alt="Indoor Image">
+                    </figure>
+                </article>
+                <article class="right-content">
+                    <h2>Outdoors</h2>
+                    <figure>
+                        <img src="dist/img/download (2).jfif" alt="Outdoor Image">
+                    </figure>
+                </article>
+            </div>
+        </section>
+
+        <section id="collect" aria-label="Exclusive Collection">
+            <div class="collect-content">
+                <article class="fill-collect">
+                    <h3>Exclusive Collection</h3>
+                    <h4>Billie</h4>
+                    <p>E.L.P brings you the finest products with exclusive designs and premium quality. Discover our collection specially curated for you, including our limited edition "Billie" series.</p>
+                </article>
+            </div>
+            <aside class="promo-aside">
+                <h2>Latest Offers</h2>
+                <img src="dist/img/collect" alt="Promo Image">
+                <ul>
+                    <li>20% off on all accessories</li>
+                    <li>Free shipping on orders over $50</li>
+                    <li>Limited edition designs available</li>
+                </ul>
+            </aside>
+        </section>
+        <section id="contact" aria-label="Newsletter Section">
+            <div class="fill-contact">
+                <div class="content">
+                    <div class="text-content">
+                        <h1>Newsletter</h1>
+                        <p>Register now with our newsletter and get the latest updates available.</p>
+                    </div>
+                    <form class="form-content" action="">
+                        <label for="name">
+                            <input type="text" name="name" id="name" placeholder="Name">
+                        </label>
+                        <label for="name">
+
+                        </label>
+                        <input type="text" name="name" id="name" placeholder="Email">
+                        </label>
+
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
-
-    <section id="jenis">
-        <div class="content-type">
-            <article class="left-content">
-
-                <head>
-                    <h2>Indoors</h2>
-                </head>
-                <img src="dist/img/indoorr" alt="Indoor Image">
-                <p>Description of indoor activities.</p>
-                <a href="#" class="shop-btn">Shop</a>
-            </article>
-            <article class="right-content">
-
-                <head>
-                    <h2>Outdoors</h2>
-                </head>
-                <img src="dist/img/download (2).jfif" alt="Outdoor Image">
-                <p>Description of outdoor activities.</p>
-                <a href="#" class="shop-btn">Shop</a>
-            </article>
-        </div>
-    </section>
-    <section id="isi">
-        <div class="title">
-            <h1>Popular
-                <p>SHOP</p>
-            </h1>
-        </div>
-        <div class="product-grid">
-            <div class="product-item">
-                <img src="dist/img/1.jfif" alt="Product 1">
-                <h3>Shoting Face Primer</h3>
-                <p>$200</p>
-            </div>
-            <div class="product-item">
-                <img src="dist/img/2.jfif" alt="Product 2">
-                <h3>Blemish Primer</h3>
-                <p>$20</p>
-            </div>
-            <div class="product-item">
-                <img src="dist/img/8" alt="Product 3">
-                <h3>Primer Orange</h3>
-                <p>$30</p>
-            </div>
-            <div class="product-item">
-                <img src="dist/img/13.jfif" alt="Product 4">
-                <h3>esense</h3>
-                <p>$40</p>
-            </div>
-        </div>
-        <!-- Foto di bawah -->
-        <div class="product-grid">
-            <div class="product-item">
-                <img src="dist/img/5" alt="Product 5">
-                <h3>Contour</h3>
-                <p>$60</p>
-            </div>
-            <div class="product-item">
-                <img src="dist/img/6.jfif" alt="Product 6">
-                <h3>Blue E.L.P</h3>
-                <p>$90</p>
-            </div>
-            <div class="product-item">
-                <img src="dist/img/7.jfif" alt="Product 7">
-                <h3>Fondation</h3>
-                <p>$90</p>
-            </div>
-            <div class="product-item">
-                <img src="dist/img/10" alt="Product 8">
-                <h3>Highleter</h3>
-                <p>$20</p>
-            </div>
-        </div>
-    </section>
-    <section id="collect">
-        <div class="collect-content">
-            <article class="fill-collect">
-                <h3>Exclusive Collection</h3>
-                <h4>Billie</h4>
-                <p>E.L.P brings you the finest products with exclusive designs and premium quality. Discover our collection specially curated for you, including our limited edition "Billie" series.</p>
-            </article>
-        </div>
-        <aside class="promo-aside">
-            <h2>Latest Offers</h2>
-            <img src="dist/img/collect" alt="Promo Image">
-            <ul>
-                <li>20% off on all accessories</li>
-                <li>Free shipping on orders over $50</li>
-                <li>Limited edition designs available</li>
-            </ul>
-        </aside>
-    </section>
-
-    <section id="contact">
-        <div class="fill-contact">
-            <div class="content">
-                <div class="text-content">
-                    <h1>Newsletter</h1>
-                    <p>Register now with our newsletter and get the<br> latest updates available</p>
-                </div>
-
-                <form class="form-content" action="">
-                    <label for="name" class="labels">
-                        <input type="text" name="name" id="name" placeholder="Name">
-                    </label>
-                    <label for="email" class="labels">
-                        <input type="text" name="email" id="email" placeholder="Email">
-                    </label>
-                    <button type="submit">Send</button>
-                </form>
-            </div>
-        </div>
-    </section>
 
     <footer id="footer">
         <div class="footer">
@@ -177,19 +123,15 @@
                 <a href="https://facebook.com" target="_blank" aria-label="Facebook">
                     <i class="fab fa-facebook-f"></i>
                 </a>
-
                 <a href="https://twitter.com" target="_blank" aria-label="Twitter">
                     <i class="fab fa-twitter"></i>
                 </a>
-
                 <a href="https://instagram.com" target="_blank" aria-label="Instagram">
                     <i class="fab fa-instagram"></i>
                 </a>
-
                 <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
-
                 <a href="https://youtube.com" target="_blank" aria-label="YouTube">
                     <i class="fab fa-youtube"></i>
                 </a>
@@ -200,9 +142,11 @@
             </div>
 
             <nav class="links">
-                <p><a href="#">Primers</a></p>
-                <p><a href="#">Night Creams</a></p>
-                <p><a href="#">Makeup Kits</a></p>
+                <ul>
+                    <li><a href="#">Primers</a></li>
+                    <li><a href="#">Night Creams</a></li>
+                    <li><a href="#">Makeup Kits</a></li>
+                </ul>
             </nav>
         </div>
     </footer>
